@@ -22,9 +22,7 @@ return {
     --@param opts AstroUIOpts
     opts = function(_, opts)
       -- read colorscheme cache on open
-      with_file(colorscheme_cache, "r", function(file)
-        opts.colorscheme = file:read "*a"
-      end)
+      with_file(colorscheme_cache, "r", function(file) opts.colorscheme = file:read "*a" end)
     end,
   },
   {
@@ -37,11 +35,7 @@ return {
           {
             event = "ColorScheme",
             callback = function(args)
-              if args.match then
-                with_file(colorscheme_cache, "w+", function(file)
-                  file:write(args.match)
-                end)
-              end
+              if args.match then with_file(colorscheme_cache, "w+", function(file) file:write(args.match) end) end
             end,
           },
         },

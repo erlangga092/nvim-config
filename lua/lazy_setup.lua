@@ -30,3 +30,14 @@ require("lazy").setup({
     },
   },
 } --[[@as LazyConfig]])
+
+-- vim.keymap.set("i", "<CR>", 'coc#pum#visible() ? "<C-y><CR>" : "<CR>"', { silent = true, expr = true })
+
+require("nvim-autopairs").setup {
+  map_cr = false,
+}
+
+vim.keymap.set("i", "<CR>", 'coc#pum#visible() ? coc#_select_confirm() : "<C-g>u<CR>"', {
+  silent = true,
+  expr = true,
+})

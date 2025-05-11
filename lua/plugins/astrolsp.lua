@@ -39,10 +39,10 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      "pyright",
       -- "ts_ls",
       -- "volar",
-      -- "emmet_language_server",
+      "emmet_language_server",
       -- "prismals",
       -- "jsonls",
       -- "prettierd",

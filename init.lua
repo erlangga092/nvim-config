@@ -15,5 +15,16 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+-- vim.filetype.add {
+--   extension = { ".edge" },
+--   filetype = "html",
+-- }
+
+-- vim.filetype.add {
+--   pattern = {
+--     [".*%.blade%.php"] = "blade",
+--   },
+-- }
+
 require "lazy_setup"
 require "polish"
