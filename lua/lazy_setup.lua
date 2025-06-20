@@ -37,7 +37,4 @@ require("nvim-autopairs").setup {
   map_cr = false,
 }
 
-vim.keymap.set("i", "<CR>", 'coc#pum#visible() ? coc#_select_confirm() : "<C-g>u<CR>"', {
-  silent = true,
-  expr = true,
-})
+

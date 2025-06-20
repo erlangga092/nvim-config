@@ -1,3 +1,4 @@
+local svelte = require "lspconfig.configs.svelte"
 if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroLSP allows you to customize the features in AstroNvim's LSP configuration engine
@@ -40,12 +41,8 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       "pyright",
-      -- "ts_ls",
-      -- "volar",
       "emmet_language_server",
-      -- "prismals",
-      -- "jsonls",
-      -- "prettierd",
+      "svelte"
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields

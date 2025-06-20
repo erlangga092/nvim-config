@@ -12,6 +12,7 @@ return {
       "blade",
       "php",
       "html",
+      "svelte"
       -- add more arguments for adding more treesitter parsers
     },
     highlight = {
